@@ -1,0 +1,29 @@
+* {
+  box-sizing: inherit;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+}
