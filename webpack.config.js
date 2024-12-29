@@ -25,6 +25,26 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
 
+  // Source maps for efficient debugging
+  devtool: 'source-map',
+
+  devServer: {
+    static: {
+      // Serves files from the 'dist' directory
+      directory: path.join(__dirname, 'dist'),
+    },
+    // Enables gzip compression
+    compress: true,
+    // Port for the server
+    port: 3000,
+    // Enables HMR (Hot Module Replacement)
+    hot: true,
+    // Automatically opens the browser when the server starts
+    open: true,
+    // Support for Single Page Applications (SPA)
+    historyApiFallback: true
+  },
+
   module: {
     rules: [
       {
