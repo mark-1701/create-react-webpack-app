@@ -1,10 +1,10 @@
-import react from '../assets/react.gif';
+import reactIcon from '../assets/react.gif';
 
 const App = () => {
   return (
     <>
       <h1>My React Webpack Application</h1>
-      <img src={react} alt="" />
+      <img src={reactIcon} alt="" />
     </>
   );
 };
