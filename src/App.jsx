@@ -1,4 +1,4 @@
-import reactIcon from '../assets/react.gif';
+import reactIcon from './assets/react.gif';
 
 const App = () => {
   return (
