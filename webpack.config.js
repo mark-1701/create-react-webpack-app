@@ -92,18 +92,6 @@ module.exports = {
           // Define the name and folder structure for the output fonts with a unique hash
           filename: 'assets/fonts/[name][hash][ext][query]'
         }
-      },
-      {
-        // Rule to process JSON files
-        test: /\.json$/i,
-
-        // Use the 'resource' asset type to export JSON files as static resources
-        type: 'asset/resource',
-
-        generator: {
-          // Define the name and folder structure for the output JSON files with a unique hash
-          filename: 'assets/data/[name][hash][ext][query]'
-        }
       }
     ]
   },
