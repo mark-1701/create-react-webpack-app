@@ -31,7 +31,7 @@ module.exports = {
   devServer: {
     static: {
       // Serves files from the 'dist' directory
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'dist')
     },
     // Enables gzip compression
     compress: true,
@@ -67,6 +67,21 @@ module.exports = {
 
           // Process the CSS files and resolve their dependencies
           'css-loader'
+        ]
+      },
+      {
+        // Rule to process SASS and SCSS files
+        test: /\.s[ac]ss$/i,
+
+        use: [
+          // Inject CSS styles directly into the DOM to be applied globally
+          'style-loader',
+
+          // Process the CSS files and resolve their dependencies
+          'css-loader',
+
+          // Compiles Sass to CSS
+          'sass-loader'
         ]
       },
       {
