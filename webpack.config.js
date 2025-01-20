@@ -80,7 +80,10 @@ module.exports = {
           // Process the CSS files and resolve their dependencies
           'css-loader',
 
-          // Compiles Sass to CSS
+          // Applies PostCSS transformations (e.g., autoprefixer, TailwindCSS)
+          'postcss-loader',
+
+          // Compiles Sass/SCSS to CSS
           'sass-loader'
         ]
       },
