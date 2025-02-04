@@ -17,7 +17,10 @@ module.exports = {
     filename: 'main.js',
 
     // Cleans the output folder before each build to avoid leftovers from previous builds
-    clean: true
+    clean: true,
+
+    // Specifies the base path for all assets. Essential for SPAs to correctly handle client-side routing.
+    publicPath: '/'
   },
 
   resolve: {
