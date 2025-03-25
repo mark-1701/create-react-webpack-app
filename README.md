@@ -40,7 +40,7 @@ To get started with this project, follow these steps:
 
 ## Explanation of the Webpack configuration
 
-```json
+```javascript
 const path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   CopyWebpackPlugin = require('copy-webpack-plugin');
